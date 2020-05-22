@@ -30,8 +30,8 @@ export default $template`() => {
                     <p class="details">
                         It is based on <strong>two independent pillars</>: on one hand, a <strong>template syntax </>
                         named <a href="#/api/xjs">XJS</> that 
-                        was designed as a refinement of React's JSX and, on the other 
-                        hand, a <strong>state management library</> (<a href="#/api/trax">trax</>) that allows 
+                        was designed as a refinement of React's JSX, and on the other 
+                        hand a <strong>state management library</> (<a href="#/api/trax">trax</>) that allows 
                         to track changes in data objects.
                     </>
                 </>
