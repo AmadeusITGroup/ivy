@@ -103,7 +103,7 @@ const infoFooter = $template`() => {
     <footer class="info">
         <p> Double-click to edit a todo </p>
         <p> Template by <a href="http://sindresorhus.com"> Sindre Sorhus </a></p>
-        <p> Created with <a href="https://github.com/b-laporte/ivy"> ivy </a></p>
+        <p> Created with <a href="https://github.com/amadeusITGroup/ivy"> ivy </a></p>
         <p> Part of <a href="http://todomvc.com"> TodoMVC </a></p>
   </footer>
 }`;

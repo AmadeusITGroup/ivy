@@ -18,17 +18,17 @@ ivy introduces many new concepts, such as
 - [CMS content][cms] support - to dynamically interpret template fragments served by a CMS
 - [pre-processors][pp] to inject or modify a template content a compilation time
 
-[tf]: http://b-laporte.github.io/ivy/#/examples/hello
-[jss]: http://b-laporte.github.io/ivy/#/examples/loops
-[pnd]: http://b-laporte.github.io/ivy/#/examples/section
-[decorators]: http://b-laporte.github.io/ivy/#/api/decorators
-[labels]: http://b-laporte.github.io/ivy/#/examples/labels1
-[cms]: http://b-laporte.github.io/ivy/#/examples/fragment1
-[pp]: http://b-laporte.github.io/ivy/#/examples/preprocessors
+[tf]: http://amadeusITGroup.github.io/ivy/#/examples/hello
+[jss]: http://amadeusITGroup.github.io/ivy/#/examples/loops
+[pnd]: http://amadeusITGroup.github.io/ivy/#/examples/section
+[decorators]: http://amadeusITGroup.github.io/ivy/#/api/decorators
+[labels]: http://amadeusITGroup.github.io/ivy/#/examples/labels1
+[cms]: http://amadeusITGroup.github.io/ivy/#/examples/fragment1
+[pp]: http://amadeusITGroup.github.io/ivy/#/examples/preprocessors
 
 Please visit [ivy documentation page][ivy] for more details and examples
 
-[ivy]: http://b-laporte.github.io/ivy
+[ivy]: http://amadeusITGroup.github.io/ivy
 
 
 ----

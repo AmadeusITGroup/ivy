@@ -2,7 +2,7 @@ import { $template } from "../iv";
 import { Data } from '../trax';
 import { IvContent } from '../iv/types';
 
-export const IVY_GH_REPO = "https://github.com/b-laporte/ivy/tree/master/";
+export const IVY_GH_REPO = "https://github.com/amadeusITGroup/ivy/tree/master/";
 
 // <*ivyLogo> : the ivy logo
 const ivyLogo = $template`(className="ivyLogoDark") => {
