@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Trax with DAGs </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono:300,400&display=swap');
+
+        body {
+            font-size: 16px;
+            color: #333;
+            font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            margin: .2rem 4rem;
+            padding: 0;
+        }
+
+        button {
+            background-color: #1670C5;
+            border-width: 0;
+            color: #ffffff;
+            font-size: 1rem;
+            border-radius: 6px;
+            padding: .4rem 1rem .4rem 1rem;
+            margin: .2rem;
+        }
+
+        .lbl {
+            font-weight: bold;
+        }
+
+        .user {
+            margin-left: .2rem;
+        }
+
+        .panel {
+            margin-top: 1rem;
+            background-color: #f2f2f2;
+            padding: .3rem;
+        }
+
+        #logs {
+            margin-top: 1rem;
+            margin-left: .2rem;
+        }
+
+        #data {
+            margin-top: .4rem;
+        }
+
+        #output {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="buttons">
+        <div>
+            <span class="lbl"> general: </span>
+            <button id="watch-btn"> watch </button>
+            <button id="unwatch-btn"> unwatch </button>
+        </div>
+        <div>
+            <span class="lbl"> updates: </span>
+            <button id="update1-btn"> user1 </button>
+            <button id="update2-btn"> user2 </button>
+            <button id="update3-btn"> data </button>
+            <button id="add-btn"> add member </button>
+            <button id="remove-btn"> remove member </button>
+            <button id="new-data-btn"> replace data </button>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="lbl"> panel updated on watch callback: </div>
+        <div id="data">
+
+        </div>
+    </div>
+    <div id="logs">
+
+    </div>
+    <script type="text/javascript" src="./trax2.js"></script>
+</body>
+
+</html>

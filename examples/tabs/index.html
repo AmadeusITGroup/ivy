@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Parameter nodes: tabs </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono:300,400&display=swap');
+
+        body {
+            font-size: 16px;
+            color: #333;
+            font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            margin: 0 4rem;
+        }
+
+        button {
+            background-color: #1670C5;
+            border-width: 0;
+            color: #ffffff;
+            font-size: 1rem;
+            border-radius: 6px;
+            padding: .4rem 1rem .4rem 1rem;
+            margin: .2rem;
+        }
+
+        .tabs ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        .tabs .content {
+            background-color: #e8e8e8;
+            padding: .5rem;
+            min-height: 70px;
+        }
+
+        .tabs li {
+            display: inline;
+            cursor: pointer;
+            padding: .2rem .5rem;
+            margin: .1rem .2rem;
+        }
+
+        .tabs li.selected {
+            border-bottom: 2px solid #1670C5;
+        }
+
+        .init {
+            color: #1670C5;
+        }
+
+        #logs {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="output"> </div>
+    <div id="logs"> </div>
+    <script type="text/javascript" src="./tabs.js"></script>
+</body>
+
+</html>

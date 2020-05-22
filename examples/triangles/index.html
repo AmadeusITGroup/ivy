@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- derived from https://stencil-fiber-demo.firebaseapp.com/perf.html -->
+<html style="width: 100%; height: 100%; overflow: hidden">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Perf Demo - Sierpinski triangles</title>
+    <style>
+        body {
+            background: #fff;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 0 4rem;
+            padding: 0;
+        }
+
+        a {
+            color: #4183c4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            border-bottom: 1px solid #ddd;
+            font-size: 2.0em;
+            font-weight: bold;
+            margin: 0 0 15px;
+            padding: 0;
+        }
+
+        button {
+            font-weight: bold;
+            line-height: 2;
+        }
+
+        fiberDemo,
+        fiberDot,
+        fiberTriangle {
+            visibility: hidden
+        }
+
+        ul {
+            list-style-type: none;
+            padding: .1rem 0;
+            margin-top: .3rem;
+        }
+
+        li {
+            margin-left: .2rem;
+        }
+
+        li:before {
+            content: "_";
+            padding-right: 5px;
+        }
+
+        .v {
+            visibility: inherit
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Sierpinski triangles</h1> -->
+    <div id="main"></div>
+    <script type="text/javascript" src="triangles.js"></script>
+</body>
+
+</html>

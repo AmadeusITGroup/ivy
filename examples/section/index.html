@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Templates with content </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono:300,400&display=swap');
+
+        body {
+            font-size: 16px;
+            color: #333;
+            font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            margin: 0rem 3rem;
+            padding: 0;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .col {
+            flex-grow: 1;
+            margin: 1rem;
+            max-width: 25rem;
+        }
+
+        div.group {
+            border: 1px solid #333;
+            border-radius: 3px;
+            padding: .5rem;
+            margin: .5rem;
+        }
+
+        div.group .title {
+            font-weight: 600;
+        }
+
+        div.section {
+            border: 1px solid #1670C5;
+            border-radius: 3px;
+            padding: .5rem;
+            margin: .5rem;
+        }
+
+        div.section .header {
+            color: #1670C5;
+            font-weight: 600;
+            margin-bottom:.2rem;
+        }
+
+        div.section .footer {
+            margin-top:.2rem;
+            font-style: italic;
+        }
+
+        hr {
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="col" id="col1"></div>
+        <div class="col" id="col2"></div>
+    </div>
+    <script type="text/javascript" src="section.js"></script>
+</body>
+
+</html>

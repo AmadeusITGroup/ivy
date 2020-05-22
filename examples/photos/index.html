@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Life-cycle hooks: $init </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono:300,400&display=swap');
+
+        body {
+            font-size: 16px;
+            color: #333;
+            font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            margin: .2rem 4rem;
+        }
+
+        button {
+            background-color: #1670C5;
+            border-width: 0;
+            color: #ffffff;
+            font-size: 1rem;
+            border-radius: 6px;
+            padding: .4rem 1rem .4rem 1rem;
+            margin: .2rem;
+        }
+
+        .photos {
+            display: grid;
+            grid-template-columns: 145px 145px 145px 145px 145px;
+            grid-gap: 8px;
+        }
+
+        .photos .loading, .photos .no_results {
+            width: 50rem;
+            margin-top: 2em;
+            text-align: center;
+        }
+
+        .photos figure {
+            width: 145px;
+            margin: 0;
+        }
+
+        .photos img {
+            width: 145px;
+            height: 145px;
+            background-color: #efefef;
+            margin: 0;
+        }
+
+        #reload {
+            margin-left: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript" src="./photos.js"></script>
+</body>
+
+</html>

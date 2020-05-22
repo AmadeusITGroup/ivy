@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Event handlers & API object </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono:300,400&display=swap');
+
+        body {
+            font-size: 16px;
+            color: #333;
+            font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            margin: 0rem 3rem;
+            padding: 0;
+        }
+
+        .val {
+            font-size: 5rem;
+            font-weight: bold;
+            user-select: none;
+            padding: 0 2px 0 2px;
+        }
+
+        .btn {
+            position: relative;
+            bottom: .9rem;
+            font-size: 2rem;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .col {
+            flex-grow: 1;
+            margin: .2rem 1rem;
+            max-width: 12rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="col" id="col1"></div>
+        <div class="col" id="col2"></div>
+    </div>
+    <script type="text/javascript" src="events.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Multi-content templates </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono:300,400&display=swap');
+
+        body {
+            font-size: 16px;
+            color: #333;
+            font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            margin: .2rem 4rem;
+            padding: 0;
+        }
+
+        button {
+            background-color: #1670C5;
+            border-width: 0;
+            color: #ffffff;
+            font-size: 1rem;
+            border-radius: 6px;
+            padding: .4rem 1rem .4rem 1rem;
+            margin: .2rem;
+        }
+
+        .menu {
+            border: 1px solid #333;
+            border-radius: 6px;
+        }
+
+        .menu .title {
+            padding: .5rem 1rem 0 1rem;
+            font-style: italic;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: .5rem 1rem;
+        }
+
+        .menu li {
+            cursor: pointer;
+            list-style-type: none;
+        }
+
+        .menu li:before {
+            content: "";
+        }
+
+        .menu li:hover {
+            color: #008BFC;
+        }
+
+        .menu .header {
+            border-bottom: 1px solid #333;
+        }
+
+        .commands {
+            padding-bottom: 1rem;
+        }
+
+        #event-log {
+            padding: 0 1rem;
+            color: #008BFC;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="output"> </div>
+    <script type="text/javascript" src="./menu1.js"></script>
+</body>
+
+</html>
