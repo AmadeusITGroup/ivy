@@ -18,7 +18,6 @@
         "cp-tests": "yarn mocha -r ts-node/register src/test/*.spec.ts --reporter dot",
         "wp-tests": "webpack --config-name mocha && yarn mocha dist/mocha.specs.js --reporter dot",
         "samples": "webpack --config-name samples",
-        "plugins": "rollup --config rollup.config.js",
         "doc": "rm -rf public/*.js && rollup --config src/doc/rollup.config.js",
         "doc-watch": "rollup --config src/doc/rollup.config.js -w",
         "doc-dev": "rm -rf public/*.js && npm-run-all --parallel serve-public doc-watch",
@@ -26,7 +25,7 @@
         "doc-samples1": "rollup --config src/doc/examples/rollup1.config.js",
         "doc-samples2": "rollup --config src/doc/examples/rollup2.config.js",
         "doc-samples-dev": "rollup --config src/doc/examples/rollup3.config.js",
-        "build-all": "yarn clean && yarn plugins && yarn test && yarn doc && yarn doc-samples1 && yarn doc-samples2",
+        "build-all": "yarn build && yarn test && yarn doc && yarn doc-samples1 && yarn doc-samples2",
         "tsd": "tsc -p . --emitDeclarationOnly"
     },
     "bugs": {
