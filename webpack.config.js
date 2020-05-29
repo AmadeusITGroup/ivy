@@ -20,7 +20,7 @@ module.exports = [{
             },
             {
                 test: /\.(ts|js)$/,
-                loader: "./dist/iv/webpack/loader.js"
+                loader: "./webpack-loader/index.js"
             }
         ]
     },
@@ -53,7 +53,7 @@ module.exports = [{
             }
         }, {
             test: /\.(ts|js)$/,
-            loader: "./dist/iv/webpack/loader.js"
+            loader: "./webpack-loader/index.js"
         }, {
             test: /\.(html|css|svg|data)$/,
             use: [{

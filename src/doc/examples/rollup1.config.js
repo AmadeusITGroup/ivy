@@ -1,8 +1,9 @@
 import typescript from 'rollup-plugin-typescript2';
 import copy from 'rollup-plugin-copy'
-import ivy from '../../../bin/rollup-plugin-ivy';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
+import ivy from '../../../rollup-plugin/index';
+import { md } from '../../../rollup-plugin/md';
 
 const production = !process.env.ROLLUP_WATCH,
     config = [],
@@ -47,7 +48,9 @@ for (let name of names) {
                 extract: `public/examples/${name}/styles.css`,
                 minimize: production
             }),
-            ivy(),
+            ivy({
+                preProcessors: { "@@md": md }
+            }),
             typescript({
                 clean: production,
                 objectHashIgnoreUnknownHack: true,

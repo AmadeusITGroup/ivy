@@ -1,9 +1,13 @@
-node_modules/
+/node_modules
 /public
-dist/
-old/
+/rollup-plugin
+/webpack-loader
+/runtime
+/typings
+/dist
+/old
 /bin
-misc/
+/misc
 .idea/
 .DS_STORE
 ._.DS_STORE

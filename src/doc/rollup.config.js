@@ -1,11 +1,11 @@
 import typescript from 'rollup-plugin-typescript2';
 import copy from 'rollup-plugin-copy'
-import ivy from '../../bin/rollup-plugin-ivy';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
-import { extract } from '../../bin/rollup-plugin-ivy-extract';
-import { md } from '../../bin/rollup-plugin-ivy-md';
-import { ts } from '../../bin/rollup-plugin-ivy-ts'
+import ivy from '../../rollup-plugin/index';
+import { extract } from '../../rollup-plugin/extract';
+import { md } from '../../rollup-plugin/md';
+import { ts } from '../../rollup-plugin/ts'
 
 const production = !process.env.ROLLUP_WATCH;
 

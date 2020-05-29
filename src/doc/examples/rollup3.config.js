@@ -1,14 +1,14 @@
 import typescript from 'rollup-plugin-typescript2';
 import copy from 'rollup-plugin-copy'
-import ivy from '../../../bin/rollup-plugin-ivy';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
-import { md } from '../../../bin/rollup-plugin-ivy-md';
+import ivy from '../../../rollup-plugin/index';
+import { md } from '../../../rollup-plugin/md';
 
 const production = !process.env.ROLLUP_WATCH,
     config = [],
     names = [
-        // 'hello',
+        'hello',
         // 'expressions',
         // 'subtemplates',
         // 'loops',
@@ -36,7 +36,7 @@ const production = !process.env.ROLLUP_WATCH,
         // 'clock',
         // 'innerHTML',
         // 'fragment1',
-        'fragment2',
+        // 'fragment2',
         // 'preprocessors'
     ];
 

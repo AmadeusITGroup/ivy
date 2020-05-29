@@ -1,5 +1,16 @@
 import { IvTemplate, IvView, IvDocument, IvNode, IvContainer, IvBlockContainer, IvEltNode, IvParentNode, IvText, IvFrgNode, IvCptContainer, IvEltListener, IvParamNode, IvLogger, IvDecoNode, IvDecorator, IvDecoratorInstance, IvBinding } from './types';
 import { ΔD, Δp, Δdf, ΔfStr, ΔfBool, ΔfNbr, Δf, Δlf, watch, unwatch, isMutating, createNewRefreshContext, commitChanges, version, resetProperty, createProperty, Δu, hasProperty, isDataObject, touch, createDictionary, ΔfRef as _ΔfRef } from '../trax';
+// import * as _events from './events';
+// import * as _fragment from './fragment';
+// import * as _innerHTML from './innerHTML';
+// import * as _inputs from './inputs';
+// import * as _router from './router';
+
+// export const events = _events;
+// export const fragment = _fragment;
+// export const innerHTML = _innerHTML;
+// export const inputs = _inputs;
+// export const router = _router;
 
 export let uidCount = 0; // counter used for unique ids (debug only, can be reset)
 

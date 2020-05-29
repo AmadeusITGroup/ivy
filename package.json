@@ -1,17 +1,21 @@
 {
-    "name": "iv",
+    "name": "@ivy-js/iv",
     "version": "0.4.0",
     "description": "JS template engine",
     "repository": {
-        "type": "git"
+        "type": "git",
+        "url": "https://github.com/AmadeusITGroup/ivy"
     },
     "author": "Bertrand Laporte",
     "copyright": "Amadeus s.a.s.",
     "license": "MIT",
     "scripts": {
-        "build": "rm -rf dist/ && tsc",
+        "clean": "rimraf runtime typings rollup-plugin webpack-loader bin dist",
+        "build": "rollup -c",
+        "prebuild": "yarn clean",
+        "postbuild": "yarn tsd",
         "test": "yarn cp-tests && yarn wp-tests",
-        "cp-tests": "yarn build && yarn mocha -r ts-node/register src/test/*.spec.ts --reporter dot",
+        "cp-tests": "yarn mocha -r ts-node/register src/test/*.spec.ts --reporter dot",
         "wp-tests": "webpack --config-name mocha && yarn mocha dist/mocha.specs.js --reporter dot",
         "samples": "webpack --config-name samples",
         "plugins": "rollup --config rollup.config.js",
@@ -22,10 +26,21 @@
         "doc-samples1": "rollup --config src/doc/examples/rollup1.config.js",
         "doc-samples2": "rollup --config src/doc/examples/rollup2.config.js",
         "doc-samples-dev": "rollup --config src/doc/examples/rollup3.config.js",
-        "clean": "rm -rf bin/ && rm -rf dist/ && rm -rf public/",
-        "build-all": "yarn clean && yarn plugins && yarn test && yarn doc && yarn doc-samples1 && yarn doc-samples2"
+        "build-all": "yarn clean && yarn plugins && yarn test && yarn doc && yarn doc-samples1 && yarn doc-samples2",
+        "tsd": "tsc -p . --emitDeclarationOnly"
     },
-    "bugs": {},
+    "bugs": {
+        "url": "https://github.com/AmadeusITGroup/ivy/issues"
+    },
+    "files": [
+        "runtime",
+        "typings",
+        "rollup-plugin",
+        "webpack-loader"
+    ],
+    "main": "runtime/index.js",
+    "module": "runtime/index.mjs",
+    "types": "typings/index.d.ts",
     "devDependencies": {
         "@types/mocha": "^5.2.7",
         "@types/node": "^11.10.4",
@@ -33,6 +48,7 @@
         "file-loader": "^4.2.0",
         "mocha": "^6.2.1",
         "npm-run-all": "^4.1.5",
+        "rimraf": "3.0.2",
         "rollup": "^1.27.2",
         "rollup-plugin-copy": "^3.1.0",
         "rollup-plugin-postcss": "2.0.6",
