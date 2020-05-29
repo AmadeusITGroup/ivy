@@ -1,0 +1,12 @@
+export declare const philosophy: () => import("../../iv/types").IvTemplate;
+export declare const templateDef: () => import("../../iv/types").IvTemplate;
+export declare const elementNodes: () => import("../../iv/types").IvTemplate;
+export declare const params: () => import("../../iv/types").IvTemplate;
+export declare const textNodes: () => import("../../iv/types").IvTemplate;
+export declare const comments: () => import("../../iv/types").IvTemplate;
+export declare const bindings: () => import("../../iv/types").IvTemplate;
+export declare const decorators: () => import("../../iv/types").IvTemplate;
+export declare const labels: () => import("../../iv/types").IvTemplate;
+export declare const jsStatements: () => import("../../iv/types").IvTemplate;
+export declare const contentProjection: () => import("../../iv/types").IvTemplate;
+export declare const preProcessors: () => import("../../iv/types").IvTemplate;
