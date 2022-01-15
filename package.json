@@ -63,7 +63,7 @@
         "vscode-textmate": "^4.2.2",
         "webpack": "^4.41.5",
         "webpack-cli": "^3.3.9",
-        "marked": "^0.8.2"
+        "marked": "^4.0.10"
     },
     "dependencies": {
         "tslib": "^1.10.0",
